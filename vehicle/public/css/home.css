@@ -1,0 +1,46 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,700;1,100&display=swap');
+*{
+    font-family: Roboto, arial, helvetica, sans-serif;
+}
+
+body {
+    background: url('../assets/spareparts.jpg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+.login-container {
+    text-align: center;
+    background-color: #f5f5f5;
+    padding: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+.login-container h2 {
+    margin: 0;
+}
+.login-form {
+    margin-top: 1rem;
+}
+.form-group {
+    margin: 1rem;
+    width: fit-content;
+    padding-right: 2rem;
+}
+.form-group label {
+    display: block;
+    text-align: left;
+}
+.form-group input {
+    width: 100%;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+.form-group input[type="submit"] {
+    background-color: #007BFF;
+    color: #fff;
+    cursor: pointer;
+}

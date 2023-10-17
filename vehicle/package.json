@@ -1,0 +1,29 @@
+{
+  "name": "vehicle",
+  "version": "1.0.0",
+  "description": "Get Vehicle Parts Online",
+  "main": "app.js",
+  "scripts": {
+    "test": "nodemon app.js",
+    "start": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lewis-2000/freyja.git"
+  },
+  "author": "lewis ng'ang'a",
+  "license": "LGPL-3.0-or-later",
+  "bugs": {
+    "url": "https://github.com/lewis-2000/freyja/issues"
+  },
+  "homepage": "https://github.com/lewis-2000/freyja#readme",
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "mongodb": "^6.1.0",
+    "mongoose": "^7.6.2"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.1"
+  }
+}

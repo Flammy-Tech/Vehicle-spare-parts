@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <script type="text/javascript" src="./js/main.js"></script>
+    <title>Main</title>
+</head>
+<body>
+    <!-- Navbar -->
+    <div class="navbar">
+        <a class="logo">Nakuru Vehicle Glasses</a>
+    </div>
+
+    <div class="content">
+        <!-- Vertical Navbar -->
+        <nav class="vertical-navbar" id="vertical-navbar">
+            <div class="profile-img">
+            </div>
+            <ul>
+                <li data-tab-target="#parts">parts</li>
+                <li data-tab-target="#orders">orders</li>
+                <li data-tab-target="#users">users</li>
+            </ul>
+        </nav>
+
+        <!-- Main Section -->
+        <main class="tab-content">
+            <div id="parts" data-tab-content class="active">
+                <div class="parts-header">
+                    <div class="parts-title">
+                        <h1>Spare Parts Order Menu</h1>
+                    </div>
+
+                    <div class="parts-sub-title">
+                        <h3>Add, Edit or remove items</h3>
+                    </div>
+
+                </div>
+
+                <div class="orders">
+                    <h1>Order Now</h1>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Item Price/Piece</th>
+                                <th>Available</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Item 1</td>
+                                <td>$10.00</td>
+                                <td>Yes</td>
+                            </tr>
+                            <tr>
+                                <td>Item 2</td>
+                                <td>$8.50</td>
+                                <td>No</td>
+                            </tr>
+                            <!-- Add more rows as needed -->
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+            <div id="orders" data-tab-content >
+                <div class="parts-header">
+                    <div class="parts-title">
+                        <h1>Spare Parts Order Menu</h1>
+                    </div>
+
+                </div>
+            </div>
+            <div id="tickets" data-tab-content>Tickets</div>
+            <div id="users" data-tab-content>Users</div>
+        </main>
+    </div>
+</body>
+</html>
