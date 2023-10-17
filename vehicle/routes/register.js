@@ -26,12 +26,14 @@ router.post('/', async (req, res) => {
         const collection = db.collection(collectionName);
 
         // Extract user data from the request
-        const { username, name, password, number } = req.body;
+        const { username, name, email, address, password, number } = req.body;
 
         // Create a user object
         const user = {
             username,
             name,
+            email,
+            address,
             password,
             number
         };
