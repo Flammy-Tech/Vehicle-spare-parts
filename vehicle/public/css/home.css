@@ -28,6 +28,8 @@ body {
     margin: 1rem;
     width: fit-content;
     padding-right: 2rem;
+        position: relative;
+
 }
 .form-group label {
     display: block;
@@ -44,3 +46,13 @@ body {
     color: #fff;
     cursor: pointer;
 }
+
+.form-footer{
+    display: flex;
+    justify-items: space-between;
+    align-items: center;
+}
+
+.form-group.form-footer input[type="submit"] {
+    margin-right: 3rem; 
+  }

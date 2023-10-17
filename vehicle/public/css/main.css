@@ -20,6 +20,11 @@ body {
     align-items: center;
 }
 
+.nav{
+    padding:0;
+    margin:0;
+}
+
 /* Logo styles */
 .logo {
     font-size: 24px;
@@ -84,6 +89,12 @@ body {
 main{
     flex: 1;
     background-color: #f3f3f3;
+}
+
+.small-image {
+    width: 100%;
+    height: auto; /* Maintain the aspect ratio */
+    padding-top: 0;
 }
 /* Header Styles */
 .parts-header, .orders-header {

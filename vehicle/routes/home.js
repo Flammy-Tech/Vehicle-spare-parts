@@ -25,9 +25,10 @@ async function retrieveUsers() {
 
 router.route('/')
     .get(async (req, res) => {
-        const users = retrieveUsers();
-        res.render('home')
+        const users = await retrieveUsers();
+        res.render('home', {users});
     }).post(async(req, res) => {
+        res.redirect('main');
 
     });
 

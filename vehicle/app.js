@@ -21,10 +21,12 @@ app.use('img', express.static(__dirname + 'public/img'));
 const homeRouter = require('./routes/home');
 const registerRouter = require('./routes/register');
 const mainRouter = require('./routes/main');
+const addPartSRouter = require('./routes/addParts');
 
 app.use('/', homeRouter);
 app.use('/register', registerRouter);
 app.use('/main', mainRouter);
+app.use('/addParts', addPartSRouter);
 
 app.listen(port, ()=>{
     console.log(`listening on port localhost ${port}`);
