@@ -5,11 +5,16 @@ const app = express();
 
 app.set('view engine', 'ejs');
 
+
+// Parse URL-encoded request bodies
+app.use(express.urlencoded({ extended: true }));
+
+
 //Static files
 app.use(express.static('public'))
-app.use('css', express.static(__dirname + 'public/css'))
-app.use('js', express.static(__dirname + 'public/js'))
-app.use('img', express.static(__dirname + 'public/img'))
+app.use('css', express.static(__dirname + 'public/css'));
+app.use('js', express.static(__dirname + 'public/js'));
+app.use('img', express.static(__dirname + 'public/img'));
 
 
 //import routes
