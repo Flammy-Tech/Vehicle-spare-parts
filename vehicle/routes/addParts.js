@@ -40,7 +40,8 @@ router.route('/')
             // Close the database connection
             client.close();
     
-            res.status(200).json({message: 'created successfully'});
+            // res.status(200).json({message: 'created successfully'});
+            res.render('addParts')
         } catch (error) {
             console.error("Error:", error);
             res.status(500).send('An error occurred while registering the parts.');
